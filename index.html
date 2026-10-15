@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>My Portfolio</h1>
+        <hr>
+    </header>
+
+    <main id="main-content">
+
+        <form id="portfolio-form" action="#" method="post">
+
+            <fieldset id="personal-information">
+                <legend><b>Personal Information</b></legend>
+
+                <p>
+                    <img src="profile.jpg" alt="Profile Picture"
+                         width="130" height="130">
+                </p>
+
+                <table id="personal-info-table">
+
+                    <tr>
+                        <td><b>Name:</b></td>
+                        <td><p id="name">Fazly Rahi</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="age"><b>Age:</b></label></td>
+                        <td>
+                            <input type="number" id="age" name="age"
+                                   style="width: 250px;"
+                                   placeholder="Enter your age">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email"><b>Email:</b></label></td>
+                        <td>
+                            <input type="email" id="email" name="email"
+                                   style="width: 250px;"
+                                   placeholder="Enter your email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="cgpa"><b>CGPA:</b></label></td>
+                        <td>
+                            <input type="number" id="cgpa" name="cgpa"
+                                   style="width: 250px;"
+                                   step="0.01" min="0" max="4"
+                                   placeholder="Enter your CGPA">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="credit"><b>Completed Credit:</b></label>
+                        </td>
+                        <td>
+                            <input type="number" id="credit" name="credit"
+                                   style="width: 250px;"
+                                   placeholder="Enter completed credits">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset id="educational-information">
+                <legend><b>Educational Information</b></legend>
+
+                <table id="education-table">
+                    <tr>
+                        <td><b>University:</b></td>
+                        <td>American International University-Bangladesh</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Department:</b></td>
+                        <td>Computer Science and Engineering</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>College:</b></td>
+                        <td>ABC College</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>School:</b></td>
+                        <td>Bindubashini Govt School</td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset id="personal-interests">
+                <legend><b>Personal Interests</b></legend>
+
+                <p><b>Hobbies:</b></p>
+
+                <input type="checkbox" id="gaming" name="hobbies"
+                       value="Gaming">
+                <label for="gaming">Gaming</label>
+
+                <input type="checkbox" id="reading" name="hobbies"
+                       value="Reading">
+                <label for="reading">Reading Books</label>
+
+                <input type="checkbox" id="photography" name="hobbies"
+                       value="Photography">
+                <label for="photography">Photography</label>
+
+                <input type="checkbox" id="traveling" name="hobbies"
+                       value="Traveling">
+                <label for="traveling">Traveling</label>
+
+                <p>
+                    <label for="sport"><b>Favorite Sport:</b></label>
+
+                    <select id="sport" name="sport">
+                        <option value="Football">Football</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Basketball">Basketball</option>
+                    </select>
+                </p>
+
+                <p><b>Favorite Anime:</b></p>
+
+                <input type="checkbox" id="death-note"
+                       name="anime" value="Death Note">
+                <label for="death-note">Death Note</label>
+
+                <input type="checkbox" id="demon-slayer"
+                       name="anime" value="Demon Slayer">
+                <label for="demon-slayer">Demon Slayer</label>
+
+                <input type="checkbox" id="attack-on-titan"
+                       name="anime" value="Attack on Titan">
+                <label for="attack-on-titan">Attack on Titan</label>
+
+                <p>
+                    <label for="about-me"><b>About Me:</b></label>
+                </p>
+
+                <textarea id="about-me" name="about-me"
+                          rows="4" cols="40"
+                          placeholder="Write something about yourself..."></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <footer id="footer">
+
+                <button type="submit" id="submit-button">
+                    Submit
+                </button>
+
+                <button type="reset" id="reset-button">
+                    Reset
+                </button>
+
+            </footer>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
